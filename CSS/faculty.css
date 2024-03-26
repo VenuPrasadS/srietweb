@@ -1,0 +1,485 @@
+body{
+    height: 100%;
+    width: 97%;
+    /* background: url(/IMAGES/back.jpeg); */
+    background: url(/IMAGES/back4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-transform: capitalize;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 2%;
+
+}
+.menu {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+
+}
+.navigation a{
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(rgb(12, 228, 206),rgb(226, 241, 205));
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    background: whitesmoke;
+    border-radius:10px;
+    transform-origin: right;
+    transition: transform.5s;
+    transform: scaleX(0);
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation a:hover{
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.container{
+    height: 100%;
+    width: 95;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+    text-align: justify;
+
+}
+.hod h2,h3{
+    background: linear-gradient(rgb(237, 236, 236),greenyellow);  
+    color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+.img{
+    height: 20%;
+    width: 25%;
+    border: 2px solid red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 39%;
+    border-radius: 10px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.header p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-right: 2%;
+    color: whitesmoke;
+}
+.advisor :nth-child(1){
+    background: linear-gradient(rgb(237, 236, 236),rgb(3, 66, 64));  
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-left: 10%;
+    
+}
+.advisor p{
+    margin-left: 10%;
+    color: rgb(107, 231, 169);
+}
+.img1{
+    height: 20%;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.a-professor{
+    height: 30%;
+    width: 90%;
+    margin: 2%;
+}
+.a-professor h2 {
+    background: linear-gradient(rgb(237, 236, 236),rgb(17, 183, 244));  
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.a-professor h3{
+    background: linear-gradient(rgb(237, 236, 236),rgb(5, 7, 8));  
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.a-professor p{
+    text-align: center;
+    color: burlywood;
+}
+.img2 , .img3{
+    height: 250px;
+    width: 20%;
+    display: inline-block;
+    margin: 2%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.placement h2{
+    margin: 2%;
+    background: linear-gradient(rgb(237, 236, 236),rgb(7, 178, 231));  
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 19px;
+}
+
+.placement p{
+    
+    background: linear-gradient(rgb(237, 236, 236),rgb(7, 178, 231));  
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-left: 10%;
+}
+
+.lab h2{
+    color: darkseagreen;
+}
+
+.lab p{
+    color: coral;
+    text-align: center;
+}
+
+
+@media screen and (max-width:400px) {
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 250px;
+        border-radius: 20px;
+        background: rgb(220, 160, 243);
+        display: none;
+
+    
+    }
+    .shown{
+        display: block;
+        transition: 2s ease-in;
+    
+    }
+    .navigation a{
+        display: block;
+        margin-left: 20%;
+        color: whitesmoke;
+        width: 200px;
+        
+    }
+    .navigation a:active{
+        color: black;
+    }
+    .navigation a:focus{
+        color: black;
+    }
+    .navigation a:hover{
+        width: 200px;
+        font-size: 1rem;
+        
+    
+    }
+    .navigation a:hover::after{
+        display: none;
+    }
+    .menu{
+        display:flex;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .hod h2,h3{
+        background: linear-gradient(rgb(237, 236, 236),greenyellow);  
+        color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        font-size: 1rem;
+    }   
+    .a-professor h3{
+        background: linear-gradient(rgb(237, 236, 236),rgb(5, 7, 8));  
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 13px;
+    } 
+    .img{
+        height:150px;
+        width: 80%;
+        border: 2px solid red;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 10%;
+        border-radius: 10px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .img1{
+        height: 150px;
+        width: 85%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .advisor p{
+        margin-left: 25%;
+        color: rgb(107, 231, 169);
+    }
+    .a-professor{
+        height: 30%;
+        width: 90%;
+        margin: 2%;
+    }
+    .a-professor h2 {
+        background: linear-gradient(rgb(237, 236, 236),rgb(17, 183, 244));  
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 1rem;
+    }
+    .a-professor p{
+        text-align: center;
+        color: burlywood;
+        font-size: 12px;
+    }
+    .img2{
+        height: 120px;
+        width: 45%;
+        display: inline-block;
+        margin: 2%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+    
+    .placement h2{
+    
+        background: linear-gradient(rgb(237, 236, 236),rgb(7, 178, 231));  
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .placement p{
+        
+        background: linear-gradient(rgb(237, 236, 236),rgb(7, 178, 231));  
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 16px;
+        margin-top: -10px;
+        text-align: justify;
+    
+    }
+    .img3{
+        height: 180px;
+        width: 65%;
+        display: inline-block;
+        margin: 2%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+    
+    .lab h2{
+        margin-top:10%;
+        color: darkseagreen;
+    }
+    
+    .lab p{
+        color: coral;
+        text-align: center;
+    }
+}
+@media screen and (min-width:400px) and (max-width:650px) {
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10%;
+        margin-left: 2%;
+        border-radius: 20px;
+    
+    }
+    .navigation a{
+        font-size: 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        position: relative;
+    
+    }
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        background: whitesmoke;
+        border-radius:10px;
+        transform-origin: right;
+        transition: transform.5s;
+        transform: scaleX(0);
+    }
+    .navigation a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .navigation a:hover{
+        background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    .shown{
+        display: none;
+        transition: 2s ease-in;
+    
+    }
+    .menu{
+        display:none;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .hod h2,h3{
+        background: linear-gradient(rgb(237, 236, 236),greenyellow);  
+        color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        font-size: 1rem;
+    }   
+    .a-professor h3{
+        background: linear-gradient(rgb(237, 236, 236),rgb(5, 7, 8));  
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 13px;
+    } 
+    .img{
+        height:230px;
+        width: 70%;
+        border: 2px solid red;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 10%;
+        border-radius: 10px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .img1{
+        height: 230px;
+        width: 70%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .advisor p{
+        margin-left: 25%;
+        color: rgb(107, 231, 169);
+    }
+    .a-professor{
+        height: 30%;
+        width: 90%;
+        margin: 2%;
+    }
+    .a-professor h2 {
+        background: linear-gradient(rgb(237, 236, 236),rgb(17, 183, 244));  
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 1rem;
+    }
+    .a-professor p{
+        text-align: center;
+        color: burlywood;
+        font-size: 12px;
+    }
+    .img2{
+        height: 160px;
+        width: 45%;
+        display: inline-block;
+        margin: 2%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+    
+    .placement h2{
+    
+        background: linear-gradient(rgb(237, 236, 236),rgb(7, 178, 231));  
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    .placement p{
+        
+        background: linear-gradient(rgb(237, 236, 236),rgb(7, 178, 231));  
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 16px;
+        margin-top: -10px;
+        text-align: justify;
+        margin-left: 32%;
+    
+    }
+    .img3{
+        height: 220px;
+        width: 70%;
+        display: inline-block;
+        margin-left: 12%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+    
+    .lab h2{
+        margin-top:10%;
+        color: darkseagreen;
+    }
+    
+    .lab p{
+        color: coral;
+        text-align: center;
+    }
+}

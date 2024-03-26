@@ -1,0 +1,369 @@
+body{
+    height: 100%;
+    width: 95%;
+    /* background: url(/IMAGES/back.jpeg); */
+    background: url(/IMAGES/back4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 2%;
+
+}
+.navigation a{
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(rgb(12, 228, 206),rgb(226, 241, 205));
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    background: whitesmoke;
+    border-radius:10px;
+    transform-origin: right;
+    transition: transform.5s;
+    transform: scaleX(0);
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation a:hover{
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.lab{
+    height: 100%;
+    width: 100%;
+
+}
+
+ h1,h2{
+
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background: linear-gradient(rgb(227, 229, 227),rgb(211, 72, 221));
+    color: transparent;
+    -webkit-background-clip: text;
+    text-transform: capitalize;
+} 
+p{
+    margin: 1% 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+    text-transform: capitalize;
+    text-align: justify;
+
+}
+.img{
+
+    display: inline-block;
+    border: 2px solid red;
+    margin: 2% 3%;
+    height: 21%;
+    width: 23%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+
+}
+img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width:400px) {
+    body{
+        height: 100%;
+        width: 95%;
+        /* background: url(/IMAGES/back.jpeg); */
+        background: url(/IMAGES/back4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 250px;
+       
+        display: none;
+        border-radius: 20px;
+        background: rgb(220, 160, 243);
+    
+    }
+    .shown{
+        display: block;
+        transition: 2s ease-in;
+    
+    }
+    .navigation a{
+        display: block;
+        margin-left: 20%;
+        color: whitesmoke;
+        width: 200px;
+        
+        
+    }
+    .navigation a:hover{
+        width: 200px;
+        font-size: 1rem;
+        
+    
+    }
+    .navigation a:active{
+        color: black;
+    }
+    .navigation a:focus{
+        color: black;
+    }
+    .navigation a:hover::after{
+        display: none;
+    }
+    .menu{
+        display:flex;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .lab{
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    h1{
+    
+        margin: 2%;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background: linear-gradient(rgb(227, 229, 227),rgb(211, 72, 221));
+        color: transparent;
+        -webkit-background-clip: text;
+        text-transform: capitalize;
+    } 
+    h2{
+        margin: 2%;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background: linear-gradient(rgb(227, 229, 227),rgb(211, 72, 221));
+        color: transparent;
+        -webkit-background-clip: text;
+        text-transform: capitalize; 
+        margin: 2%;
+    }
+    p{
+        margin: 1% 4%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: whitesmoke;
+        text-transform: capitalize;
+        text-align: justify;
+        margin: 5%;
+    
+    }
+    .img{
+    
+        display: inline-block;
+        border: 2px solid red;
+        margin: 2% 3%;
+        height: 200px;
+        width: 90%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
+    
+    }
+    .electronics-lab :nth-child(3){
+        display: none;
+    }
+    .mpmc-lab :nth-child(5){
+        display: none;
+    }
+    .dsp-lab :nth-child(5){
+        display: none;
+    }.communication-lab :nth-child(5){
+        display: none;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:620px) {
+
+    body{
+        
+        height: 100%;
+        width: 95%;
+         background: url(/IMAGES/back4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10%;
+        margin-left: 2%;
+    
+    }
+    .navigation a{
+        font-size: 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        position: relative;
+    
+    }
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        background: whitesmoke;
+        border-radius:10px;
+        transform-origin: right;
+        transition: transform.5s;
+        transform: scaleX(0);
+    }
+    .navigation a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .navigation a:hover{
+        background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    .shown{
+        display: none;
+        transition: none;
+    }
+    .menu{
+        display:none;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .lab{
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    h1{
+    
+        margin: 2%;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background: linear-gradient(rgb(227, 229, 227),rgb(211, 72, 221));
+        color: transparent;
+        -webkit-background-clip: text;
+        text-transform: capitalize;
+    } 
+    h2{
+        margin: 2%;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background: linear-gradient(rgb(227, 229, 227),rgb(211, 72, 221));
+        color: transparent;
+        -webkit-background-clip: text;
+        text-transform: capitalize; 
+        margin: 2%;
+    }
+    p{
+        margin: 1% 4%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: whitesmoke;
+        text-transform: capitalize;
+        text-align: justify;
+        margin: 5%;
+    
+    }
+    .img{
+    
+        display: inline-block;
+        border: 2px solid red;
+        margin: 2% 3%;
+        height: 200px;
+        border-radius: 20px;
+        width: 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .electronics-lab :nth-child(4){
+        display: block;
+        width: 80%;
+        margin-left: 7%;
+    }
+    .mpmc-lab :nth-child(5){
+        display: block;
+        width: 80%;
+        margin-left: 7%;
+    }
+    .dsp-lab :nth-child(5){
+        display: block;
+        width: 80%;
+        margin-left: 7%;
+    }.communication-lab :nth-child(5){
+        display: block;
+        width: 80%;
+        margin-left: 7%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+    

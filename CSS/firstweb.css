@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'popins',sans-serif;
+  
+}
+
+
+body{
+    height: 100%;
+    width: 99%; 
+    background: linear-gradient(rgb(10, 113, 230),rgb(91, 6, 249));
+    text-align: justify;
+    text-transform: capitalize;
+}
+.top-div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+   
+}
+.slider{
+    position: relative;
+    display: grid;
+    width: 95%;
+    place-items: center;
+    height: 15%;
+    margin: auto;
+    overflow: hidden;
+    margin: 2%;
+}
+.slider-track{
+    display: flex;
+    width: calc(250px * 10);
+    animation: scroll 250s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-70px *100));
+    }
+}
+.slid{
+    height: 10%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    perspective: 100px;
+}
+img{
+    width: 60%;
+    height: 250px;
+    transition: transform .5s;
+    border-radius: 20px;
+}
+img:hover{
+    transform: translateZ(20px);
+}
+.slider::after,
+.slider::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right rgba(225,225,225,1)0%,rgba(255,255,255,0)100%);
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+}
+.slider::before{
+    top: 0;
+    left: o;
+}
+.slider::after{
+    top: 0;
+    right: 0;
+    transform: rotateZ('100deg');
+}
+.menu {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 2%;
+
+}
+.navigation a{
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(rgb(251, 251, 249),rgb(247, 120, 251));
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    background: whitesmoke;
+    border-radius:10px;
+    transform-origin: right;
+    transition: transform.5s;
+    transform: scaleX(0);
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation a:hover{
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2% 2%;
+   
+    
+}
+.first-naac h2{
+    margin: 2%;
+}
+.header h1{
+    background: linear-gradient(rgb(218, 239, 28),rgb(246, 120, 9));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header .clg{
+    color: greenyellow;
+
+}
+
+.naac h1{
+    margin: 2%;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.naac p{
+    margin: 2%;
+}
+
+.img{
+    height: 150px;
+    margin:2%;
+    width: 300px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    display: inline-block;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.first-naac h2{
+
+    background: linear-gradient(red,greenyellow);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.about-ece h1{
+    margin: 2%;
+    font-size: 25px;
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.about-ece p{
+    margin: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.vision h2{
+    text-align: center;
+    margin: 2%;
+    font-size: 25px;
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.vision p{
+    margin: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mission h2{
+    text-align: center;
+    color: crimson;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 2%;
+}
+.mission li{
+    margin: 1% 3% 3% 4%;
+    list-style:lower-roman;
+    margin-left: 5%;
+}
+.placed-students h2{
+    margin: 2%;
+    color: darkgoldenrod;
+}
+.placed-students .place-student{
+    height: 200px;
+    margin:2%;
+    width: 200px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.place-student img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.place-student :nth-child(2){
+    color: greenyellow;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-left: 12%;
+}
+.place-student :nth-child(3){
+    color: rgb(238, 115, 246);
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-left: 22%;
+}
+.placed-companies h2{
+    color: rgb(23, 191, 247);
+    margin: 2%;
+}
+.placed-companies .companies{
+    display: inline-block;
+    margin: 2%;
+    height: 200px;
+    width: 200px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.companies img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.companies p{
+    color: rgb(238, 115, 246);
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-left: 22%;
+}
+
+
+@media screen and (max-width:400px) {
+    body{
+        min-height: 100vh;
+        width: 100%; 
+        background: linear-gradient(rgb(10, 113, 230),rgb(91, 6, 249));
+    }
+    .top-div{
+        position: relative;
+        height: 100%;
+        width: 100%;
+       
+    }
+    .slider{
+        position: relative;
+        display: grid;
+        width: 95%;
+        place-items: center;
+        height: 15%;
+        margin: auto;
+        overflow: hidden;
+        margin: 2%;
+    }
+    .slider-track{
+        display: flex;
+        width: calc(150px * 10);
+        animation: scroll 250s linear infinite;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-70px *100));
+        }
+    }
+    .slid{
+        height: 200px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        perspective: 100px;
+    }
+    img{
+        background-position: center;
+        background-size: cover;
+        width: 30%;
+        height: 200px;
+        transition: transform .5s;
+        border-radius: 20px;
+    }
+    img:hover{
+        transform: translateZ(20px);
+    }
+    .slider::after,
+    .slider::before{
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right rgba(225,225,225,1)0%,rgba(255,255,255,0)100%);
+        height: 100%;
+        width: 15%;
+        z-index: 2;
+    }
+    .slider::before{
+        top: 0;
+        left: o;
+    }
+    .slider::after{
+        top: 0;
+        right: 0;
+        transform: rotateZ('100deg');
+    }
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 100%;
+        border-radius: 20px;
+        background: rgb(68, 138, 249);
+        display: none;
+
+        
+    }
+    .shown{
+        display: block;
+        transition: 2s ease-in;
+    
+    }
+    .navigation a{
+        display: block;
+        margin-left: 20%;
+    }
+    .navigation a:active{
+        color: black;
+    }
+    .navigation a:focus{
+        color: black;
+    }
+    .navigation a:hover{
+        background: linear-gradient(rgb(218, 239, 28),rgb(246, 120, 9));
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 1rem;
+    
+    }
+    .navigation a:hover::after{
+        display: none;
+    }
+    .menu{
+        display:flex;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    
+    }
+    .header h1{
+        background: linear-gradient(rgb(218, 239, 28),rgb(246, 120, 9));
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 1rem;
+    }
+    .mission li{
+        margin: 1% 3% 3% 4%;
+        list-style:lower-roman;
+        margin-left: 10%;
+    }
+    .first-naac .img{
+        height: 150px;
+        margin:2%;
+        width: 45%;
+        border: 2px solid rgb(248, 246, 246);
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .img img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .about-ece h1{
+        margin: 2%;
+        font-size: 15px;
+        background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    .menu{
+        display:flex;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    
+    }
+    .img{
+        height: 100px;
+        margin: 2%;
+        width: 120px;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .placed-students .place-student{
+        height: 150px;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        width: 120px;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .place-student :nth-child(2){
+        color: greenyellow;
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-left: 12%;
+        font-size: 12px;
+    }
+    .placed-companies .companies{
+        display: inline-block;
+        margin: 3%;
+        height: 150px;
+        width: 43%;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    
+}
+
+@media screen and (min-width:400px) and (max-width:620px) {
+    body{
+    
+        height: 100%;
+        width: 100%;
+        text-align: justify;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10%;
+        margin-left: 2%;
+    
+    }
+    .navigation a{
+        font-size: 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        position: relative;
+    
+    }
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        background: whitesmoke;
+        border-radius:10px;
+        transform-origin: right;
+        transition: transform.5s;
+        transform: scaleX(0);
+    }
+    .navigation a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .navigation a:hover{
+        background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    .shown{
+        display: none;
+        transition: none;
+    
+    }
+    .menu{
+        display:none;
+        position: none;
+        top: 0px;
+        left: 0;
+    
+    }
+    .header h1{
+        background: linear-gradient(rgb(218, 239, 28),rgb(246, 120, 9));
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 1rem;
+    }
+    .mission li{
+        margin: 1% 3% 3% 4%;
+        list-style:lower-roman;
+        margin-left: 10%;
+    }
+    .first-naac .img{
+        height: 150px;
+        margin:2%;
+        width: 45%;
+        border: 2px solid rgb(248, 246, 246);
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .img img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .about-ece h1{
+        margin: 2%;
+        font-size: 15px;
+        background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+   
+    .img{
+        height: 100px;
+        margin: 2%;
+
+        width: 40%;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .img img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .placed-students .place-student{
+        height: 150px;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        width: 25%;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .place-student :nth-child(2){
+        color: greenyellow;
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-left: 12%;
+        font-size: 12px;
+    }
+    .placed-companies .companies{
+        display: inline-block;
+        margin: 4%;
+        height: 150px;
+        width: 40%;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+}

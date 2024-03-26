@@ -1,0 +1,392 @@
+body{
+    height: 100%;
+    width: 96%;
+    text-transform:capitalize ;
+    background: url(/IMAGES/back4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 2%;
+
+}
+.menu {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+
+}
+.navigation a{
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(rgb(12, 228, 206),rgb(226, 241, 205));
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    background: whitesmoke;
+    border-radius:10px;
+    transform-origin: right;
+    transition: transform.5s;
+    transform: scaleX(0);
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation a:hover{
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container{
+   height: 100%;
+   width: 97%;
+   
+
+
+}
+.container h2{
+    background: linear-gradient(rgb(250, 248, 248),rgb(154, 246, 154),rgb(236, 108, 223));
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.video1{
+    height: 400px;
+    width: 40%;
+    box-shadow: 10px 10px 10px rgba(236, 234, 233, 0.4)
+    ,-10px -10px 5px rgb(236, 234, 233,0.4);
+    margin: 2%;
+    
+
+}
+em{
+    color: chartreuse;
+    font-size: 20px;
+}
+em:hover{
+    color: crimson;
+}
+.container :nth-child(4),:nth-child(5){
+    text-align: justify;
+    text-indent:30px;
+    margin: 2%;
+}
+.container .video{
+    width: 60%;
+}
+.container p{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin: 2% 2%
+
+}
+.img{
+    display: inline-block;
+    height: 200px;
+    width: 27%;
+    border: 2px solid whitesmoke;
+    margin: 2%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width:400px) {
+    
+    .video1{
+        height: 200px;
+        width: 90%;
+        box-shadow: 5px 5px 5px rgba(236, 234, 233, 0.4)
+        ,-5px -5px 5px rgb(236, 234, 233,0.4);
+        border-radius: 20px;
+    
+        
+    
+    }
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 250px;
+        border-radius: 20px;
+        background: rgb(220, 160, 243);
+        display: none;
+
+    
+    }
+    .shown{
+        display: block;
+        transition: 2s ease-in;
+    
+    }
+    .navigation a:active{
+        color: black;
+    }
+    .navigation a:focus{
+        color: black;
+    }
+    .navigation a{
+        display: block;
+        margin-left: 20%;
+        color: whitesmoke;
+        width: 200px;
+        
+    }
+    .navigation a :nth-child(5){
+        display: block;
+        margin-left:50%;
+        color: rgb(218, 15, 15);
+        width: 200px;
+        
+    }
+    .navigation a:hover{
+        width: 200px;
+        font-size: 1rem;
+        
+    
+    }
+    .navigation a:hover::after{
+        display: none;
+    }
+    .menu{
+        display:flex;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .container p{
+        color: whitesmoke;
+        font-family: 'popins', sans-serif;
+        margin-left: 5%;
+        text-align: justify;
+    
+    }
+    .img{
+        display: inline-block;
+        height: 150px;
+        width: 44%;
+        border: 2px solid whitesmoke;
+        margin: 2%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        
+    }
+    
+}
+@media screen and (min-width:400px) and (max-width:620px) {
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 4%;
+        margin-left: 2%;
+        font-size: 10px;
+        border-radius: 20px;
+        /* background: rgb(220, 160, 243); */
+    
+    }
+    .navigation a{
+        font-size: 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        margin-right: 20px;
+    
+    }
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        background: whitesmoke;
+        border-radius:10px;
+        transform-origin: right;
+        transition: transform.5s;
+        transform: scaleX(0);
+
+    }
+    .navigation a:hover::after{
+        transform-origin: left;
+        font-size: 10px;
+        transform: scaleX(1);
+    }
+    .navigation a:hover{
+        background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    .video1{
+        height: 300px;
+        width: 80%;
+        margin-left: 10%;
+        box-shadow: 5px 5px 5px rgba(236, 234, 233, 0.4)
+        ,-5px -5px 5px rgb(236, 234, 233,0.4);
+        border-radius: 20px;
+    
+        
+    
+    }
+    .shown{
+        display: none;
+        transition: 2s ease-in;
+    
+    }
+    .menu{
+        display:none;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .container p{
+        color: whitesmoke;
+        font-family: 'popins', sans-serif;
+        margin-left: 5%;
+        text-align: justify;
+    
+    }
+    .img{
+        display: inline-block;
+        height: 150px;
+        width: 44%;
+        border: 2px solid whitesmoke;
+        margin: 2%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        
+    }
+    
+}
+
+
+
+
+/* *{
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    background-color: rgba(225,125,0);
+    color: whitesmoke;
+    border-radius: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    box-shadow: 10px 40px rgab(225,125,0,.4);
+    cursor: pointer;
+}
+.video-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(225,122,0,0.1);
+    display: flex;
+    align-items: center;
+    
+    transition: all 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    justify-content: center;
+
+}
+.video-container .close{
+    position: absolute;
+    top: 10%;
+    right: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.video-container video{
+    width: 90%;
+    max-width: 800px;
+    transform: scale(0);
+    box-shadow: 0 px 20px 20px rgba(0,0,0.2);
+    outline: none;
+    transition:all 0.3s;
+
+}
+
+.video-container.show{
+    pointer-events: all;
+    opacity: 1;
+}
+
+.video-containe.show video{
+    transform: scale(1);
+} */

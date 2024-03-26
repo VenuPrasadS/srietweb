@@ -1,0 +1,288 @@
+body{
+    height: 100%;
+    width: 97%;
+    background: url(/IMAGES/back4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: capitalize;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 2%;
+
+}
+.navigation a:active{
+        color: black;
+}
+.navigation a:focus{
+        color: black;
+}
+.menu {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+
+}
+.navigation a{
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(rgb(12, 228, 206),rgb(226, 241, 205));
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    background: whitesmoke;
+    border-radius:10px;
+    transform-origin: right;
+    transition: transform.5s;
+    transform: scaleX(0);
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation a:hover{
+    background: linear-gradient(rgb(99, 216, 35),rgb(210, 203, 14));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    font-family: 'popins',sans-serif;
+    margin: 2%;
+}
+p{
+    color: whitesmoke;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 17px;
+    margin-right: 2%;
+}
+h2{
+    background: linear-gradient(rgb(182, 225, 108),rgb(213, 68, 180));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.img{
+    display: inline-block;
+    height: 200px;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid whitesmoke;
+    margin: 1%;
+    border-radius: 20px;
+}
+.img1{
+    display: inline-block;
+    height: 200px;
+    width: 35%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid whitesmoke;
+    margin: 1%;
+    border-radius: 20px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width:400px) {
+    body{
+        height: 100%;
+        width: 97%;
+        background: url(/IMAGES/back4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 250px;
+        border-radius: 20px;
+        background: rgb(220, 160, 243);
+        display: none;
+
+    
+    }
+    .shown{
+        display: block;
+        transition: 2s ease-in;
+    
+    }
+    .navigation a{
+        display: block;
+        margin-left: 20%;
+        color: whitesmoke;
+        width: 200px;
+        
+    }
+    .navigation a:hover{
+        width: 200px;
+        font-size: 1rem;
+        
+    
+    }
+    .navigation a:hover::after{
+        display: none;
+    }
+    .menu{
+        display:flex;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        font-family: 'popins',sans-serif;
+        margin: 2%;
+    }
+    p{
+        color: whitesmoke;
+        text-indent: 30px;
+        text-align: justify;
+        font-size: 15px;
+        margin-right: 2%;
+    }
+    h2{
+        background: linear-gradient(rgb(182, 225, 108),rgb(213, 68, 180));
+        color: transparent;
+        font-size: 20px;
+        -webkit-background-clip: text;
+    }
+    .img{
+        display: inline-block;
+        height: 200px;
+        width: 85%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid whitesmoke;
+        margin: 1%;
+        border-radius: 20px;
+    }
+    .img1{
+        display: inline-block;
+        height: 150px;
+        width: 45%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid whitesmoke;
+        margin: 1%;
+        border-radius: 20px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    
+    }
+}
+@media screen and (min-width:400px) and (max-width:620px) {
+    body{
+        height: 100%;
+        width: 97%;
+        background: url(/IMAGES/back4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .shown{
+        display: none;
+        transition: 2s ease-in;
+    
+    }
+
+    .menu{
+        display:none;
+        position: relative;
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        color: whitesmoke;
+    
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        font-family: 'popins',sans-serif;
+        margin: 2%;
+    }
+    p{
+        color: whitesmoke;
+        text-indent: 30px;
+        text-align: justify;
+        font-size: 15px;
+        margin-right: 2%;
+    }
+    h2{
+        background: linear-gradient(rgb(182, 225, 108),rgb(213, 68, 180));
+        color: transparent;
+        font-size: 20px;
+        -webkit-background-clip: text;
+    }
+    .img{
+        display: inline-block;
+        height: 200px;
+        width: 45%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid whitesmoke;
+        margin: 1%;
+        border-radius: 20px;
+    }
+    .img1{
+        display: inline-block;
+        height: 150px;
+        width: 45%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid whitesmoke;
+        margin: 1%;
+        border-radius: 20px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    
+    }
+}
